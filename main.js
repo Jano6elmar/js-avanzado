@@ -6,6 +6,12 @@ import { callbacksComponent } from './src/concepts/02-callbacks';
 import { promiseComponent } from './src/concepts/03-promises';
 import { promiseComponent2 } from './src/concepts/03-promises.hell';
 import { promiseRaceComponent } from './src/concepts/04-promise-race';
+import { asyncComponent } from './src/concepts/05-async';
+import { asyncAwaitComponent } from './src/concepts/06-async-await';
+import { asyncAwait2Component } from './src/concepts/07-async-await';
+import { forAwaitComponent } from './src/concepts/08-for-await';
+import { generartorFunctionComponent } from './src/concepts/09-generators';
+import {  generatorsAsyncComponent } from './src/concepts/10-generators-async';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -30,4 +36,10 @@ const element = document.querySelector('.card');
 //callbacksComponent( element );
 //promiseComponent( element ); 
 //promiseComponent2(element);
-promiseRaceComponent( element );
+//promiseRaceComponent( element );
+//asyncComponent( element );
+//asyncAwaitComponent( element );
+//asyncAwait2Component( element );
+//forAwaitComponent( element );
+//generartorFunctionComponent( element )
+generatorsAsyncComponent(element)
